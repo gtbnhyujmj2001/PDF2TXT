@@ -1,1 +1,10 @@
 pdf2text + LLM 清洗	先提取，再用 GPT 清理結構
+
+ 實作建議（簡單流程）：
+把法律 PDF 丟進 Calibre，轉 EPUB
+
+拿 EPUB 用 EPUB to Text 拆章、清洗結構
+
+存成條文段落 JSON 或 txt，餵進 NotebookLLM 或你 Colab notebook
+
+問：「第 23 條意思是什麼？」、「有沒有例外規定？」之類的問題
